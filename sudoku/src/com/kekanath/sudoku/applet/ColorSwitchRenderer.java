@@ -14,7 +14,7 @@ public class ColorSwitchRenderer extends DefaultTableCellRenderer {
 			boolean isSelected, boolean hasFocus, int row, int column) {
 		// TODO Auto-generated method stub
 		Position pos = new Position(row, column);
-		int index = pos.getSubPoolIndex(MainApplet.SIZE_OF_BOARD);
+		int index = pos.getSubPoolIndex(MainFrame.SIZE_OF_BOARD);
 		setBackground((index % 2 == 0) ? Color.LIGHT_GRAY : Color.WHITE);
 		return super.getTableCellRendererComponent(table, value, isSelected,
 				hasFocus, row, column);
