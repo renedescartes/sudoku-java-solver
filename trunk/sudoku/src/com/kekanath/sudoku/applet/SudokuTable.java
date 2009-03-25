@@ -14,5 +14,4 @@ public class SudokuTable extends JTable{
 		setSelectionBackground(Color.BLUE);
 	}
 
-	
 }
