@@ -4,9 +4,8 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 import javax.swing.JButton;
+import javax.swing.JLabel;
 import javax.swing.JTable;
-import javax.swing.JTextField;
-import javax.swing.event.ChangeEvent;
 import javax.swing.table.TableModel;
 
 import com.kekanath.sudoku.core.board.BoardManager;
@@ -16,13 +15,14 @@ public class SolveButton extends JButton implements ActionListener {
 
 	JTable table;
 	
-	JTextField status;
+	JLabel status;
 
-	public SolveButton(String text, JTable table, JTextField status) {
+	public SolveButton(String text, JTable table, JLabel status) {
 		super(text);
 		this.table = table;
 		this.status = status;
 		addActionListener(this);
+		setFont(getFont().deriveFont(16f));
 	}
 
 	public void actionPerformed(ActionEvent e) {

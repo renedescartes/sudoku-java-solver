@@ -3,16 +3,14 @@ package com.kekanath.sudoku.applet;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
-import javax.swing.JButton;
-import javax.swing.JTable;
-import javax.swing.JTextField;
+import javax.swing.*;
 import javax.swing.table.TableModel;
 
 public class LoadButton extends JButton implements ActionListener {
 
 	JTable table;
 
-	JTextField status;
+	JLabel status;
 
 	String[][] sampleQuestion = new String[][] {
 			{"", "", "", "", "2", "6", "", "", "9"},
@@ -25,11 +23,12 @@ public class LoadButton extends JButton implements ActionListener {
 			{"7", "" , "", "", "1", "", "", "4", ""},
 			{"9", "", "", "3", "8", "", "", "", ""},
 	};
-	public LoadButton(String text, JTable table, JTextField status) {
+	public LoadButton(String text, JTable table, JLabel status) {
 		super(text);
 		this.table = table;
 		this.status = status;
 		addActionListener(this);
+		setFont(getFont().deriveFont(16f));
 	}
 
 	public void actionPerformed(ActionEvent e) {
