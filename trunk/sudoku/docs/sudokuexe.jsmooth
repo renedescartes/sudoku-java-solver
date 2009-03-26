@@ -17,17 +17,29 @@
 <maximumMemoryHeap>-1</maximumMemoryHeap>
 <maximumVersion></maximumVersion>
 <minimumVersion>1.5</minimumVersion>
-<skeletonName>Console Wrapper</skeletonName>
+<skeletonName>Windowed Wrapper</skeletonName>
 <skeletonProperties>
 <key>Message</key>
 <value>The sudoku solver needs a JRE of atleast 1.5+. Usually this is found in most computers. Do you want to download Java now?</value>
 </skeletonProperties>
 <skeletonProperties>
-<key>PressKey</key>
+<key>URL</key>
+<value></value>
+</skeletonProperties>
+<skeletonProperties>
+<key>SingleProcess</key>
+<value>1</value>
+</skeletonProperties>
+<skeletonProperties>
+<key>SingleInstance</key>
+<value>0</value>
+</skeletonProperties>
+<skeletonProperties>
+<key>JniSmooth</key>
 <value>0</value>
 </skeletonProperties>
 <skeletonProperties>
 <key>Debug</key>
-<value>1</value>
+<value>0</value>
 </skeletonProperties>
 </jsmoothproject>
