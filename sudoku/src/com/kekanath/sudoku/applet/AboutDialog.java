@@ -6,10 +6,9 @@ import java.awt.BorderLayout;
 import java.awt.Frame;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.net.URL;
 
 import javax.swing.*;
-import javax.swing.border.*;
+import javax.swing.border.EmptyBorder;
 /**
  * Creates a standard about dialog with a given author and a purpose
  * @author Kannan
@@ -20,14 +19,7 @@ public class AboutDialog extends JDialog {
 
 	public AboutDialog() {
 		super((Frame)null, "About" + " " + "Sudoku Solver", true);
-		URL resource = getClass().getResource("logo.gif");
-		JLabel lbl = new JLabel(new ImageIcon(resource, "Logo"));
 		JPanel p = new JPanel();
-		Border b1 = new BevelBorder(BevelBorder.LOWERED);
-		Border b2 = new EmptyBorder(5, 5, 5, 5);
-		lbl.setBorder(new CompoundBorder(b1, b2));
-		p.add(lbl);
-		getContentPane().add(p, BorderLayout.WEST);
 
 		JTextArea copyRightMessage = new JTextArea("Developed to solve sudokus");
 		copyRightMessage.setBorder(new EmptyBorder(5, 10, 5, 10));
