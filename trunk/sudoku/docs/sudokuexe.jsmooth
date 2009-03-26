@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <jsmoothproject>
+<JVMSearchPath>jrepath</JVMSearchPath>
 <JVMSearchPath>registry</JVMSearchPath>
 <JVMSearchPath>javahome</JVMSearchPath>
-<JVMSearchPath>jrepath</JVMSearchPath>
 <JVMSearchPath>jdkpath</JVMSearchPath>
 <JVMSearchPath>exepath</JVMSearchPath>
 <JVMSearchPath>jview</JVMSearchPath>
@@ -17,29 +17,17 @@
 <maximumMemoryHeap>-1</maximumMemoryHeap>
 <maximumVersion></maximumVersion>
 <minimumVersion>1.5</minimumVersion>
-<skeletonName>Windowed Wrapper</skeletonName>
+<skeletonName>Console Wrapper</skeletonName>
 <skeletonProperties>
 <key>Message</key>
 <value>The sudoku solver needs a JRE of atleast 1.5+. Usually this is found in most computers. Do you want to download Java now?</value>
 </skeletonProperties>
 <skeletonProperties>
-<key>URL</key>
-<value>http://www.java.com</value>
-</skeletonProperties>
-<skeletonProperties>
-<key>SingleProcess</key>
-<value>1</value>
-</skeletonProperties>
-<skeletonProperties>
-<key>SingleInstance</key>
-<value>0</value>
-</skeletonProperties>
-<skeletonProperties>
-<key>JniSmooth</key>
+<key>PressKey</key>
 <value>0</value>
 </skeletonProperties>
 <skeletonProperties>
 <key>Debug</key>
-<value>0</value>
+<value>1</value>
 </skeletonProperties>
 </jsmoothproject>
