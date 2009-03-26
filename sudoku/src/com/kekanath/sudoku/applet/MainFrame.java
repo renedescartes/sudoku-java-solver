@@ -6,6 +6,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.KeyEvent;
 
 import javax.swing.*;
+
 import static com.kekanath.sudoku.applet.SwingUtil.*;
 public class MainFrame extends JFrame {
 
@@ -13,6 +14,7 @@ public class MainFrame extends JFrame {
 
 	public MainFrame() {
 		super("Sudoku Java Solver Application");
+		this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		JTable table = new SudokuTable(SIZE_OF_BOARD, SIZE_OF_BOARD);
 		
 		JLabel status = new JLabel("Start entering numbers [only digits between 0 and 9]");
